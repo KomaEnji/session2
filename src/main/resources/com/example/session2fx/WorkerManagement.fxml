@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TreeView?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.session2fx.WorkerManagement">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.session2fx.WorkerManagementController">
    <children>
       <Pane layoutX="2.0" layoutY="3.0" prefHeight="97.0" prefWidth="990.0" style="-fx-background-color: #BDECB6;">
          <opaqueInsets>
@@ -25,9 +26,12 @@
       </Pane>
       <Pane layoutX="11.0" layoutY="137.0" prefHeight="636.0" prefWidth="480.0" style="-fx-background-color: #d5d9dd;">
          <children>
-            <TreeView fx:id="treeViewDep" layoutX="10.0" layoutY="16.0" prefHeight="583.0" prefWidth="426.0" />
+            <TreeView fx:id="treeViewDep" layoutX="10.0" layoutY="16.0" prefHeight="613.0" prefWidth="463.0" />
          </children>
       </Pane>
-      <Pane layoutX="506.0" layoutY="137.0" prefHeight="636.0" prefWidth="472.0" style="-fx-background-color: #d5d9dd;" />
+      <Pane layoutX="506.0" layoutY="137.0" prefHeight="636.0" prefWidth="472.0" style="-fx-background-color: #d5d9dd;">
+         <children>
+            <ListView fx:id="listViewWorker" layoutX="14.0" layoutY="14.0" prefHeight="619.0" prefWidth="451.0" />
+         </children></Pane>
    </children>
 </AnchorPane>
